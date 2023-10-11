@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #99cef1,#e7f3b1,#a676ff,#ec89c6);
+    background-size: 320% 400%;
+    animation: color 15s ease-in-out infinite;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding-top: 15% ;
+    padding-bottom: 30px;
+    font-size: 45px;
+    color: #333;
+    font-weight: bold;
+}
+
+form {
+    background-color: #edecf0;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+h4.prediction-output {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #5c0202; /* Set a color that complements your design */
+    background-color: #edecf0; /* Add a subtle background color */
+    padding: 10px; /* Add some padding for spacing */
+    border: 1px solid #ccc; /* Add a border for separation */
+    text-align: center; /* Center the text horizontally */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+}
+
+
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
